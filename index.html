@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>TITLE</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	
+	
+	<!-- Font -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+	
+	<!-- Stylesheets -->
+	
+	<link href="common-css/bootstrap.css" rel="stylesheet">
+	
+	
+	<link href="common-css/fluidbox.min.css" rel="stylesheet">
+	
+	<link href="common-css/font-icon.css" rel="stylesheet">
+	
+	
+	<link href="01-homepage/css/styles.css" rel="stylesheet">
+	
+	<link href="01-homepage/css/responsive.css" rel="stylesheet">
+	
+</head>
+<body>
+	
+	<header>
+		
+		<div class="container">
+		
+			<a class="logo hidden" href="#" ><img src="images/logo-white.png" alt="Logo"></a>
+			
+			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
+			
+			<ul class="main-menu visible-on-click" id="main-menu">
+				<li><a href="index.html">HOME</a></li>
+				<li class="drop-down"><a href="#!">OUR STORIES<i class="icon icon-caret-down"></i></a>
+				
+					<ul class="drop-down-menu">
+						<li><a href="#">FEATURED</a></li>
+						<li><a href="#story">ABOUT</a></li>
+						<li class="drop-down"><a href="#!">CATEGORIES<i class="icon icon-caret-right"></i></a>
+							<ul class="drop-down-menu drop-down-inner">
+								<li><a href="#">FEATURED</a></li>
+								<li><a href="#">ABOUT</a></li>
+								<li><a href="#">CATEGORIES</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+				</li>
+				
+				<li><a href="03-regular-page.html">THER WEDDING</a></li>
+				<li><a href="#gallery">GELLERY</a></li>
+				<li><a href="02-rsvp.html">RSVP</a></li>
+			</ul><!-- main-menu -->
+			
+		</div><!-- container -->
+	</header>
+	
+	
+	<div class="main-slider">
+		<div class="display-table center-text">
+			<div class="display-table-cell">
+				<div class="slider-content">
+					<h5 class="date">Happy birthday</h5>
+					<h3 class="pre-title">Serena</h3>
+					<i class="small-icon icon icon-tie"></i>
+					<h5 class="date">25 October 2019</h5>
+					
+					<h3 class="pre-title">Will you marry me</h3>
+					<h1 class="title">Jeremy <i class="icon icon-heart"></i>Serena</h1>
+					
+				</div><!-- slider-content-->
+			</div><!--display-table-cell-->
+		</div><!-- display-table-->
+	</div><!-- main-slider -->
+	
+	
+	<section class="section story-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title">Our Story</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+
+					<p class="desc margin-bottom">It is fated that we met again and be together, the difference is since this time we will never be apart</p>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section counter-area center-text">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-12">
+					<div class="heading">
+						<h2 class="title">We have been together for:</h2>
+						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
+					</div>
+				</div>
+				
+				<div class="col-sm-2 hidden"></div>
+				<div class="col-sm-8 hidden">
+					
+					<div class="remaining-time">
+						<div id="clock"></div>
+					</div><!-- remaining-time -->
+				</div><!-- col-sm-10 -->
+						<p id="clocker" class="col-sm-12"></p>
+
+			<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Dec 21, 2018 15:37:25").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			  // Get today's date and time
+			  var now = new Date().getTime();
+			    
+			  // Find the distance between now and the count down date
+			  var distance = now - countDownDate;
+			    
+			  // Time calculations for days, hours, minutes and seconds
+			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+			    
+			  // Output the result in an element with id="demo"
+			  document.getElementById("clocker").innerHTML = days + "d " + hours + "h "
+			  + minutes + "m " + seconds + "s ";
+			    
+			  // If the count down is over, write some text 
+			  if (distance < 0) {
+			    clearInterval(x);
+			    document.getElementById("clocker").innerHTML = "EXPIRED";
+			  }
+			}, 1000);
+			</script>
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section w-details-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					
+					<div class="heading">
+						<h2 class="title" id="story">Our story</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="wedding-details margin-bottom">
+						
+						<div class="w-detail right">
+							<i class="icon icon-ciurclke"></i>
+							<h4 class="title">First met</h4>
+							<p>We met each other for the first time in 2008 when we were both high school students. She was beautiful</p>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-wine-glass"></i>
+							<h4 class="title">First Date</h4>
+							<p>12/21/2018</p>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail right">
+							<i class="icon icon-cake"></i>
+							<h4 class="title">In love</h4>
+							<p>She is my sunshine</p>
+						</div><!-- w-detail -->
+						
+						<div class="w-detail left">
+							<i class="icon icon-camera"></i>
+							<h4 class="title">Engagement </h4>
+							<p>We are engaged - 10/25/2019</p>
+						</div><!-- w-detail -->
+						
+					</div><!-- wedding-details -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="section ceremony-area center-text">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title">I wanna tell you:</h2>
+						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
+					</div>
+
+					<div class="ceremony margin-bottom">
+						<p class="desc">我爱你 像风 走过八千里 不问所起<br> 我爱你 像云 飘摇晴空里 不问归期<br> 我爱你 像月 别离时缺 见你是圆</p>
+						
+						<a class="border-btn" href="#">LEARN MORE</a>
+					</div>
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	
+	
+	<section class="section galery-area center-text">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-12">
+					
+					<div class="heading">
+						<h2 class="title" id="gallery">Our Gallery</h2>
+						<span class="heading-bottom"><i class="icon icon-star"></i></span>
+					</div>
+					
+					<div class="image-gallery">
+						<div class="row">
+					
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-1-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-1-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-2-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-2-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-3-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-3-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-4-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-4-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-5-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-5-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+							<div class="col-md-4 col-sm-6">
+								<a href="images/gallery-6-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-6-600x400.jpg" alt="Gallery Image"></a>
+							</div><!-- col-sm-4 -->
+							
+						</div><!-- row -->
+						
+						<a class="btn-2 margin-bottom gallery-btn" href="#">VIEW ALL GALLERY</a>
+						
+					</div><!-- image-gallery -->
+					
+				</div><!-- col-sm-10 -->
+			</div><!-- row -->
+		</div><!-- container -->
+	</section><!-- section -->
+	
+	<section class="contact-area">
+		<div class="contact-wrapper section float-left">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					
+					<div class="col-sm-10">
+						<div class="heading">
+							<h3 class="title">Contact Us</h3>
+							<i class="icon icon-star"></i>
+						</div>
+						
+						<div class="margin-bottom">
+							<p>We plan to get married on the 14 Feb 2020</p>
+							<p>Join us as we celebrate life and love.</p>
+							<h4><a href="tel:784-412-0646" class="phone">617-515-3363</a></h4>
+							<p>Boston, US</p>
+							
+						</div><!-- margin-bottom -->
+					</div><!-- col-sm-10 -->
+					
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- float-left -->
+		
+		<div class="map-area">
+			<div id="map" style="height:100%;"></div>
+		</div><!-- map-area -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script>
+	
+	</section><!-- section -->
+	
+	
+	<footer>
+		<div class="container center-text">
+			
+			<div class="logo-wrapper">
+				<a class="logo" href="#"><img src="images/logo-black.png" alt="Logo Image"></a>
+				<i class="icon icon-star"></i>
+			</div>
+			
+			<div class="newsletter">
+				<h4 class="title">RECEIVE NEWS IN YOUR EMAIL</h4>
+				<p>Join our mailing list to receive news and announcements</p>
+				<div class="email-area">
+					<form>
+						<input class="email-input" type="text" placeholder="Your Email">
+						<button class="submit-btn" type="submit"><i class="icon icon-email-plane"></i></button>
+					</form>
+				</div><!-- email-area -->
+			</div><!-- newsletter -->
+			
+			
+			<ul class="social-icons">
+				<li><a href="#"><i class="icon icon-heart"></i></a></li>
+				<li><a href="#"><i class="icon icon-twitter"></i></a></li>
+				<li><a href="#"><i class="icon icon-instagram"></i></a></li>
+				<li><a href="#"><i class="icon icon-pinterest"></i></a></li>
+				<li><a href="#"><i class="icon icon-tripadvisor"></i></a></li>
+			</ul>
+
+			<ul class="footer-links">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">OUR STORIES</a></li>
+				<li><a href="#">THE WEDDING</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			
+			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			
+		</div><!-- container -->
+	</footer>
+	
+	
+	<!-- SCIPTS -->
+	
+	<script src="common-js/jquery-3.1.1.min.js"></script>
+	
+	<script src="common-js/tether.min.js"></script>
+	
+	<script src="common-js/bootstrap.js"></script>
+	
+	<script src="common-js/jquery.countdown.min.js"></script>
+	
+	<script src="common-js/jquery.fluidbox.min.js"></script>
+	
+	
+	<script src="common-js/scripts.js"></script>
+	
+</body>
+</html>
